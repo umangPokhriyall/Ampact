@@ -1,4 +1,5 @@
 // Import necessary types from React
+"use client"
 import { ReactNode } from 'react'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
