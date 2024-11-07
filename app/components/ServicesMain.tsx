@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from 'react'
-import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Palette, Megaphone, TrendingUp, Users, Smile, Smartphone, Globe, Mic, MessageSquare, Share } from 'lucide-react'  // Adjust icons as needed

@@ -15,19 +15,19 @@ export default function TestimonialSection() {
       name: "Alex Johnson",
       company: "TechCorp",
       image: "/placeholder.svg?height=100&width=100",
-      statement: "The product exceeded our expectations. It's intuitive, powerful, and has significantly improved our workflow.",
+      statement: "The product exceeded our expectations. It&apos;s intuitive, powerful, and has significantly improved our workflow.",
     },
     {
       name: "Sarah Lee",
       company: "InnovateCo",
       image: "/placeholder.svg?height=100&width=100",
-      statement: "Outstanding support and a robust feature set. This solution has been a game-changer for our team's productivity.",
+      statement: "Outstanding support and a robust feature set. This solution has been a game-changer for our team&apos;s productivity.",
     },
     {
       name: "Michael Chen",
       company: "FutureTech",
       image: "/placeholder.svg?height=100&width=100",
-      statement: "We've seen a 40% increase in efficiency since implementing this tool. It's been an excellent investment for our company.",
+      statement: "We&apos;ve seen a 40% increase in efficiency since implementing this tool. It&apos;s been an excellent investment for our company.",
     },
   ]
 
@@ -47,7 +47,7 @@ export default function TestimonialSection() {
                   <h3 className="font-semibold text-lg text-gray-900 mb-1">{testimonial.name}</h3>
                   <p className="text-sm text-purple-600 mb-2">{testimonial.company}</p>
                   <blockquote className="text-gray-600 text-sm">
-                    "{testimonial.statement}"
+                    &quot;{testimonial.statement}&quot;
                   </blockquote>
                 </div>
               </div>

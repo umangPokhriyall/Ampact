@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Quote, Lightbulb, Target, Trophy, Zap } from "lucide-react"
 
-export default function Component() {
+export default function WhatWeOffer() {
     const sectionRef = useRef<HTMLElement>(null)
 
     useEffect(() => {
@@ -12,24 +12,31 @@ export default function Component() {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('animate-fade-in')
+                        entry.target.classList.add("animate-fade-in")
                     }
                 })
             },
             { threshold: 0.1 }
         )
 
-        const cards = sectionRef.current?.querySelectorAll('.card-animate')
+        const cards = sectionRef.current?.querySelectorAll(".card-animate")
         cards?.forEach((card) => observer.observe(card))
 
         return () => observer.disconnect()
     }, [])
 
     return (
-        <section ref={sectionRef} className="py-16 bg-gray-100 relative overflow-hidden" aria-labelledby="why-it-exists-title">
+        <section
+            ref={sectionRef}
+            className="py-16 bg-gray-100 relative overflow-hidden"
+            aria-labelledby="why-it-exists-title"
+        >
             <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-transparent opacity-50"></div>
             <div className="mx-28 px-4 relative z-10">
-                <h2 id="why-it-exists-title" className="text-3xl font-bold text-center mb-12 flex items-center justify-center text-gray-900">
+                <h2
+                    id="why-it-exists-title"
+                    className="text-3xl font-bold text-center mb-12 flex items-center justify-center text-gray-900"
+                >
                     <Zap className="w-8 h-8 mr-2 text-purple-600" />
                     Why We Exist
                 </h2>

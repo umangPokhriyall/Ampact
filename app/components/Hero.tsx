@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { TrendingUp, Users, MessageCircle, BarChart2 } from "lucide-react";
 import BookCallModal from "./BookCallModal";
 import Image from "next/image";
 

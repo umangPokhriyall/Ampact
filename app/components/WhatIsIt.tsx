@@ -1,6 +1,5 @@
 "use client"
 import Image from 'next/image'
-import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import BookCallModal from "./BookCallModal"
 import { useState } from 'react'
@@ -47,7 +46,7 @@ export default function Component() {
                     <div className="md:col-span-2 bg-gray-50 rounded-lg shadow-md p-6 flex flex-col justify-center order-1 md:order-2">
                         <h3 className="text-xl font-semibold mb-4 text-gray-800">Our Approach</h3>
                         <p className="text-gray-600">
-                            We believe in a human-centered approach to design and development. By combining creativity with data-driven insights, we craft tailored solutions that resonate with your audience and achieve measurable results. Our iterative process ensures that we're always refining and improving our work to meet and exceed your expectations. From concept to execution, we're committed to delivering excellence at every step.
+                            We believe in a human-centered approach to design and development. By combining creativity with data-driven insights, we craft tailored solutions that resonate with your audience and achieve measurable results. Our iterative process ensures that we&apos;re always refining and improving our work to meet and exceed your expectations. From concept to execution, we&apos;re committed to delivering excellence at every step.
                         </p>
                     </div>
                 </div>
