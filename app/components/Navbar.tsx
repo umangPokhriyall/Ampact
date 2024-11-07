@@ -1,11 +1,42 @@
-'use client'
-
+// Import necessary types from React
+import { ReactNode } from 'react'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, ChevronRight, BarChart } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import BookCallModal from "./BookCallModal"
+
+// Define types for props
+interface NavLinkProps {
+    href: string
+    children: ReactNode
+}
+
+function NavLink({ href, children }: NavLinkProps) {
+    return (
+        <Link
+            href={href}
+            className="px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:bg-purple-100 transition-colors duration-300"
+        >
+            {children}
+        </Link>
+    )
+}
+
+interface MobileNavLinkProps {
+    href: string
+    children: ReactNode
+}
+
+function MobileNavLink({ href, children }: MobileNavLinkProps) {
+    return (
+        <Link href={href} className="flex items-center text-gray-800 hover:text-purple-600 transition-colors duration-300">
+            <ChevronRight className="h-4 w-4 mr-2" />
+            <span>{children}</span>
+        </Link>
+    )
+}
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -65,25 +96,5 @@ export default function Navbar() {
             </div>
             <BookCallModal isOpen={isModalOpen} closeModal={closeModal} />
         </nav>
-    )
-}
-
-function NavLink({ href, children }) {
-    return (
-        <Link
-            href={href}
-            className="px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:bg-purple-100 transition-colors duration-300"
-        >
-            {children}
-        </Link>
-    )
-}
-
-function MobileNavLink({ href, children }) {
-    return (
-        <Link href={href} className="flex items-center text-gray-800 hover:text-purple-600 transition-colors duration-300">
-            <ChevronRight className="h-4 w-4 mr-2" />
-            <span>{children}</span>
-        </Link>
     )
 }
