@@ -12,7 +12,7 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900 text-white">
             <div className="max-w-6xl mx-auto px-4 py-10 md:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div className="space-y-4">
                         <h2 className="text-2xl font-bold text-purple-400">GrowDigital</h2>
                         <p className="text-gray-300">Empowering businesses to thrive in the digital landscape.</p>
@@ -51,7 +51,6 @@ export default function Footer() {
 
                     <div>
                         <h3 className="text-lg font-semibold mb-4 text-purple-400">Stay Connected</h3>
-
                         <div className="flex space-x-4 mt-4">
                             <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors"><Facebook size={24} /></a>
                             <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors"><Twitter size={24} /></a>

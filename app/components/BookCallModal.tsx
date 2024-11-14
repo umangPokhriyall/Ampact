@@ -60,16 +60,16 @@ export default function BookCallModal({ isOpen, closeModal }: BookCallModalProps
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center p-4">
             <div className="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-lg shadow-lg">
                 <div className="flex justify-end p-4">
                     <button onClick={closeModal} className="text-gray-500 hover:text-gray-700">
                         <X size={24} />
                     </button>
                 </div>
-                <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="p-4 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     <div>
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6">Book a Call</h2>
+                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Book a Call</h2>
                         <div className="space-y-4 text-gray-600">
                             <p>GrowDigital</p>
                             <p>123 Digital Ave, Tech City, 12345</p>

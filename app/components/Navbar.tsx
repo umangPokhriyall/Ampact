@@ -1,14 +1,12 @@
-// Import necessary types from React
 "use client"
-import { ReactNode } from 'react'
-import { useState, useEffect } from 'react'
+
+import { ReactNode, useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, ChevronRight, BarChart } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import BookCallModal from "./BookCallModal"
 
-// Define types for props
 interface NavLinkProps {
     href: string
     children: ReactNode
@@ -25,12 +23,7 @@ function NavLink({ href, children }: NavLinkProps) {
     )
 }
 
-interface MobileNavLinkProps {
-    href: string
-    children: ReactNode
-}
-
-function MobileNavLink({ href, children }: MobileNavLinkProps) {
+function MobileNavLink({ href, children }: NavLinkProps) {
     return (
         <Link href={href} className="flex items-center text-gray-800 hover:text-purple-600 transition-colors duration-300">
             <ChevronRight className="h-4 w-4 mr-2" />
@@ -82,7 +75,7 @@ export default function Navbar() {
                                     <span className="sr-only">Open menu</span>
                                 </Button>
                             </SheetTrigger>
-                            <SheetContent side="right" className="bg-white">
+                            <SheetContent side="right" className="w-[250px] sm:w-[300px]">
                                 <div className="flex flex-col space-y-4 mt-4">
                                     <MobileNavLink href="/services">Services</MobileNavLink>
                                     <MobileNavLink href="/case-studies">Case Studies</MobileNavLink>

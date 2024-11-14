@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Quote, Lightbulb, Target, Trophy, Zap } from "lucide-react"
+import { Quote, Lightbulb, Target, Trophy, Zap } from 'lucide-react'
 
 export default function WhatWeOffer() {
     const sectionRef = useRef<HTMLElement>(null)
@@ -32,7 +32,7 @@ export default function WhatWeOffer() {
             aria-labelledby="why-it-exists-title"
         >
             <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-transparent opacity-50"></div>
-            <div className="mx-28 px-4 relative z-10">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
                 <h2
                     id="why-it-exists-title"
                     className="text-3xl font-bold text-center mb-12 flex items-center justify-center text-gray-900"
@@ -50,7 +50,7 @@ export default function WhatWeOffer() {
                             </CardTitle>
                         </CardHeader>
                         <CardContent className="text-gray-700">
-                            <p className="text-lg">
+                            <p className="text-base sm:text-lg">
                                 We exist to bridge the gap between creativity and technology. Unlike traditional agencies, we combine cutting-edge design with robust development to deliver holistic digital solutions that drive real business growth.
                             </p>
                         </CardContent>
@@ -91,14 +91,12 @@ export default function WhatWeOffer() {
                             <CardTitle className="text-gray-900">Founder&apos;s Vision</CardTitle>
                         </CardHeader>
                         <CardContent className="text-gray-700">
-                            <p className="text-lg">
+                            <p className="text-base sm:text-lg">
                                 &quot;We founded this agency with a simple yet powerful mission: to create digital experiences that not only look beautiful but also drive tangible results for our clients. Every project we undertake is a step towards realizing that vision.&quot;
                             </p>
                             <p className="mt-4 text-right font-semibold">- Alex Rivera, Founder &amp; CEO</p>
                         </CardContent>
                     </Card>
-
-
                 </div>
             </div>
         </section>

@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Palette, Megaphone, TrendingUp, Users, Smile, Smartphone, Globe, Mic, MessageSquare, Share } from 'lucide-react'  // Adjust icons as needed
+import { Palette, Megaphone, TrendingUp, Users, Smile, Smartphone, Globe, Mic, MessageSquare, Share } from 'lucide-react'
 import BookCallModal from "./BookCallModal"
 
 export default function Component() {
@@ -53,13 +53,13 @@ export default function Component() {
     const additionalServices = [
         {
             title: "Web Development",
-            description: "Your website is your brand's digital home! We build high-performance websites that reflect your brand’s personality.",
+            description: "Your website is your brand's digital home! We build high-performance websites that reflect your brand's personality.",
             icon: Globe,
             link: "/services/web-development"
         },
         {
             title: "PR Podcasts",
-            description: "Your voice, their ears, your brand’s impact! Stand out as an industry leader with engaging PR podcasts.",
+            description: "Your voice, their ears, your brand's impact! Stand out as an industry leader with engaging PR podcasts.",
             icon: Mic,
             link: "/services/pr-podcasts"
         },
@@ -81,7 +81,7 @@ export default function Component() {
 
     return (
         <section className="py-12 bg-white" aria-labelledby="services-title">
-            <div className="mx-28 px-4">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <h2 id="services-title" className="text-3xl font-bold text-center mb-8 text-gray-900">Our Services</h2>
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {[...initialServices, ...(showMore ? additionalServices : [])].map((service, index) => (
